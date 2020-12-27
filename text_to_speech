@@ -1,0 +1,16 @@
+import pyttsx3 as ts #python text to speech lib
+
+speak = ts.init() #initiates the speak variable
+name=input('Enter name:')
+speak.say('Hello')
+speak.say('I am Lucifer')
+speak.say(f'I repeat whatever {name} writes')
+speak.say(name)
+greet=input('How you feel today?')
+if 'good' in greet or 'cool' in greet:
+	speak.say('ok, have a nice day')
+else:
+	speak.say('Better luck next time')
+speak.runAndWait()
+
+
